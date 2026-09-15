@@ -13,7 +13,7 @@ jobs:
     name: Typecheck, test, build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
       - uses: actions/setup-node@v7
         with:
           node-version-file: .node-version
@@ -56,7 +56,7 @@ jobs:
             package-manager-version: '1.22.7'
             language-version: '1.22.0'
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
       - id: detect
         uses: ./
         with:
@@ -84,7 +84,7 @@ jobs:
     name: Run action (mixed, forced language)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
       - id: auto
         uses: ./
         with:
